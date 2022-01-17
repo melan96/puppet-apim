@@ -83,4 +83,11 @@ class apim_gateway inherits apim_gateway::params {
   #   mode   => '0644',
   #   source => "puppet:///modules/${module_name}/some_file",
   # }
+
+  # file { "/mnt/apim_gw/wso2am-3.2.0/repository/components/lib/mysql-connector-java-8.0.27.jar":
+  #   owner  => $user,
+  #   group  => $user_group,
+  #   mode   => '0644',
+  #   source => "puppet:///modules/${module_name}/mysql-connector-java-8.0.27.jar",
+  # }
 }

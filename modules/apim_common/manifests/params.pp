@@ -63,7 +63,7 @@ class apim_common::params {
       $pid_file_path = "${product_dir}/${pack}/wso2/worker/runtime.pid"
     }
     'apim_gateway': {
-      $pack = "wso2am-${version}"
+      $pack = "https://github.com/wso2/product-apim/releases/download/v3.2.0/wso2am-3.2.0.zip"
       # $remote_pack = "<URL_TO_APIM_GATEWAY_PACK>"
       $server_script_path = "${product_dir}/${pack}/bin/wso2server.sh"
       $pid_file_path = "${product_dir}/${pack}/wso2carbon.pid"
