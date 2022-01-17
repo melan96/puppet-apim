@@ -160,7 +160,7 @@ class apim_common::params {
   ]
 
   $key_manager_server_url = 'https://km.melanr.com:${mgt.transport.https.port}${carbon.context}services/'
-  $key_validator_thrift_server_host = 'localhost'
+  $key_validator_thrift_server_host = 'km.melanr.com'
 
   $api_devportal_url = 'https://devportal.melanr.com:${mgt.transport.https.port}/devportal'
   $api_devportal_server_url = 'https://devportal.melanr.com:${mgt.transport.https.port}${carbon.context}services/'

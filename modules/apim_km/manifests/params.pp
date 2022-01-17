@@ -20,7 +20,7 @@ class apim_km::params inherits apim_common::params {
 
   $start_script_template = 'bin/wso2server.sh'
   $jvmxms = '256m'
-  $jvmxmx = '1024m'
+  $jvmxmx = '512m'
 
   $template_list = [
     'repository/conf/deployment.toml',
@@ -45,5 +45,5 @@ class apim_km::params inherits apim_common::params {
      This is will become part of the End Point Reference of the
      services deployed on this server instance.
   */
-  $hostname = 'localhost'
+  $hostname = 'km.melanr.com'
 }
