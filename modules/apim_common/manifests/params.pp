@@ -138,11 +138,11 @@ class apim_common::params {
     }
   ]
 
-  $throttle_decision_endpoints = '"tcp://tm1.local:5672"'
+  $throttle_decision_endpoints = '"tcp://tm.melanr:5672"'
   $throttling_url_group = [
     {
-      traffic_manager_urls      => '"tcp://tm1.local:9611"',
-      traffic_manager_auth_urls => '"ssl://tm1.local:9771"'
+      traffic_manager_urls      => '"tcp://tm.melanr:9611"',
+      traffic_manager_auth_urls => '"ssl://tm.melanr:9771"'
     }
   ]
 
@@ -159,11 +159,11 @@ class apim_common::params {
     }
   ]
 
-  $key_manager_server_url = 'https://localhost:${mgt.transport.https.port}${carbon.context}services/'
+  $key_manager_server_url = 'https://km.melanr.com:${mgt.transport.https.port}${carbon.context}services/'
   $key_validator_thrift_server_host = 'localhost'
 
-  $api_devportal_url = 'https://localhost:${mgt.transport.https.port}/devportal'
-  $api_devportal_server_url = 'https://localhost:${mgt.transport.https.port}${carbon.context}services/'
+  $api_devportal_url = 'https://devportal.melanr.com:${mgt.transport.https.port}/devportal'
+  $api_devportal_server_url = 'https://devportal.melanr.com:${mgt.transport.https.port}${carbon.context}services/'
 
   $traffic_manager_receiver_url = 'tcp://${carbon.local.ip}:${receiver.url.port}'
   $traffic_manager_auth_url = 'ssl://${carbon.local.ip}:${auth.url.port}'
