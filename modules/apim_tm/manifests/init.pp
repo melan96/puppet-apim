@@ -84,7 +84,7 @@ class apim_tm inherits apim_tm::params {
   #   source => "puppet:///modules/${module_name}/some_file",
   # }
 
-  file { "${install_path}/repository/components/lib/mysql-connector-java-8.0.27.jar":
+  file { "/mnt/apim_tm/wso2am-3.2.0/repository/components/lib/mysql-connector-java-8.0.27.jar":
     owner  => $user,
     group  => $user_group,
     mode   => '0644',

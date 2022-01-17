@@ -20,7 +20,7 @@ class apim_gateway::params inherits apim_common::params {
 
   $start_script_template = 'bin/wso2server.sh'
   $jvmxms = '256m'
-  $jvmxmx = '1024m'
+  $jvmxmx = '512m'
 
   $template_list = [
     'repository/conf/deployment.toml',
@@ -39,7 +39,7 @@ class apim_gateway::params inherits apim_common::params {
      This is will become part of the End Point Reference of the
      services deployed on this server instance.
   */
-  $hostname = 'localhost'
+  $hostname = 'gm.melanr.com'
 
   # ----- api-manager.xml config params -----
   $jms_conn_factory = 'amqp://${admin.username}:${admin.password}@clientid/carbon?brokerlist=\'tcp://${carbon.local.ip}:${jms.port}\''
